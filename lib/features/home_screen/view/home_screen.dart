@@ -351,6 +351,7 @@ class _HomeScreenState extends State<HomeScreen> {
                              margin: const EdgeInsets.symmetric(horizontal: 25),
                            height: model.packageData.length * 180,
                              child: ListView.builder(
+                               physics: const NeverScrollableScrollPhysics(),
                                itemCount: model.packageData.length,
                                  itemBuilder: (context,index){
                                    return   Container(
